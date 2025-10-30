@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <!-- H -->
-        <section id="h" class="">
+        <!-- H - Lock Screen -->
+        <section id="h" class="active">
             <div class="lock-container">
                 <div class="lock">
                     <div class="lock-body"></div>
@@ -24,13 +24,13 @@
                     type="password"
                     placeholder="Masukkan password..."
                 />
-                <button onclick="checkPassword()">Buka 🎀</button>
+                <button onclick="checkPassword()">Buka</button>
             </div>
         </section>
 
-        <!-- I -->
+        <!-- I - Birthday Cake -->
         <section id="i">
-            <h1>It’s Your Day 🎂</h1>
+            <h1>It's Your Day 🎂</h1>
             <p>Selamat ulang tahun yang ke-22, Hima! Tiup lilinnya ya~</p>
             <div class="cake-container">
                 <div class="cake">
@@ -41,65 +41,106 @@
                     </div>
                 </div>
             </div>
-
-            <p class="hint">Coba tiup lilinnya~ 🎂</p>
+            <p class="hint">Klik lilinnya untuk meniup~ 🕯️</p>
         </section>
 
-        <!-- M -->
-        <section id="m" class="active">
+        <!-- M - Gift Box -->
+        <section id="m">
             <h1>My Little Gift for You 🎁</h1>
             <p>
                 Kado ini nggak bisa dibungkus kertas, tapi isinya mungkin bisa
                 bikin kamu senyum sedikit lebih lama 💞
             </p>
             <div class="gift-container">
+                <div class="sparkles">
+                    <div class="sparkle">✨</div>
+                    <div class="sparkle">💫</div>
+                    <div class="sparkle">⭐</div>
+                    <div class="sparkle">✨</div>
+                </div>
                 <div class="gift-box">
                     <div class="lid"></div>
-                    <div class="ribbon"></div>
+                    <div class="ribbon-v"></div>
+                    <div class="ribbon-h"></div>
+                    <div class="bow">
+                        <div class="bow-left"></div>
+                        <div class="bow-right"></div>
+                        <div class="bow-center"></div>
+                    </div>
                     <div class="box"></div>
                 </div>
                 <div class="scrapbook">
                     <div class="cover">💛 Scrapbook</div>
-                    <div class="page left"></div>
-                    <div class="page right"></div>
                 </div>
             </div>
         </section>
 
-        <!-- A -->
+        <!-- A - About -->
         <section id="a">
-            <h1>About You 💐</h1>
-            <p>
-                Kamu itu anak bungsu yang hangat, lucu, dan selalu punya
-                semangat luar biasa. Dunia kayaknya selalu lebih tenang kalau
-                kamu ada.
-            </p>
-            <button onclick="nextPage('t')">Lanjut 📖</button>
+            <div class="scrapbook-page">
+                <div class="page-corner corner-tl"></div>
+                <div class="page-corner corner-br"></div>
+                <h1>About You 💐</h1>
+                <p>
+                    Kamu itu anak bungsu yang hangat, lucu, dan selalu punya
+                    semangat luar biasa. Dunia kayaknya selalu lebih tenang
+                    kalau kamu ada.
+                </p>
+                <button onclick="flipPage('t')">Halaman Berikutnya 📖</button>
+            </div>
         </section>
 
-        <!-- T -->
+        <!-- T - Story -->
         <section id="t">
-            <h1>The Story of Us 📖</h1>
-            <p>
-                Awalnya cuma KKN, tapi entah kenapa, semua hal kecil waktu itu
-                berubah jadi kenangan yang nggak bisa kulupain.
-            </p>
-            <button onclick="nextPage('u')">Lanjut 💞</button>
+            <div class="scrapbook-page">
+                <div class="page-corner corner-tl"></div>
+                <div class="page-corner corner-br"></div>
+                <h1>The Story of Us 📖</h1>
+                <p>
+                    Awalnya cuma KKN, tapi entah kenapa, semua hal kecil waktu
+                    itu berubah jadi kenangan yang nggak bisa kulupain.
+                </p>
+                <button onclick="flipPage('u')">Halaman Berikutnya 💞</button>
+            </div>
         </section>
 
-        <!-- U -->
+        <!-- U - Unspoken -->
         <section id="u">
-            <h1>Unspoken Words 💬</h1>
-            <p>
-                Semangat sidangnya ya 🌻 Aku tahu kamu pasti bisa. Terima kasih
-                udah selalu jadi alasan aku semangat juga.
-            </p>
-            <button onclick="nextPage('l')">Lanjut 🌙</button>
+            <div class="scrapbook-page">
+                <div class="page-corner corner-tl"></div>
+                <div class="page-corner corner-br"></div>
+                <h1>Unspoken Words 💬</h1>
+                <p>
+                    Semangat sidangnya ya 🌻 Aku tahu kamu pasti bisa. Terima
+                    kasih udah selalu jadi alasan aku semangat juga.
+                </p>
+                <button onclick="flipPage('l')">Halaman Berikutnya 🌙</button>
+            </div>
         </section>
 
-        <!-- L -->
+        <!-- L - Last -->
         <section id="l">
             <h1>Last but not Least 🌅</h1>
+            <div class="sunflower-container">
+                <div class="sunflower">
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="petal"></div>
+                    <div class="sunflower-center"></div>
+                    <div class="stem">
+                        <div class="leaf"></div>
+                    </div>
+                </div>
+            </div>
             <p>
                 Selamat ulang tahun, Hima. Terima kasih udah jadi kamu — baik,
                 ulet, dan selalu bikin semuanya terasa berarti 💖
@@ -107,11 +148,7 @@
             <button onclick="nextPage('h')">Putar lagi 💞</button>
         </section>
 
-        <!-- Kontrol Musik -->
-        <audio id="bg-music" loop>
-            <source src="assets/prams.mp3" type="audio/mpeg" />
-        </audio>
-
+        <!-- Music Control -->
         <button id="music-btn" onclick="toggleMusic()">🎵</button>
 
         <script src="js/main.js"></script>
