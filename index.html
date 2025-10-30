@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>For You</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- H -->
+        <section id="h" class="">
+            <div class="lock-container">
+                <div class="lock">
+                    <div class="lock-body"></div>
+                    <div class="lock-shackle"></div>
+                </div>
+                <h1>Hai, Hima!</h1>
+                <p>
+                    Aku punya sesuatu yang spesial buat kamu hari ini... Tapi
+                    cuma bisa kamu buka kalau tahu kuncinya 😋
+                </p>
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Masukkan password..."
+                />
+                <button onclick="checkPassword()">Buka 🎀</button>
+            </div>
+        </section>
+
+        <!-- I -->
+        <section id="i">
+            <h1>It’s Your Day 🎂</h1>
+            <p>Selamat ulang tahun yang ke-22, Hima! Tiup lilinnya ya~</p>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="frosting"></div>
+                    <div class="base"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="hint">Coba tiup lilinnya~ 🎂</p>
+        </section>
+
+        <!-- M -->
+        <section id="m" class="active">
+            <h1>My Little Gift for You 🎁</h1>
+            <p>
+                Kado ini nggak bisa dibungkus kertas, tapi isinya mungkin bisa
+                bikin kamu senyum sedikit lebih lama 💞
+            </p>
+            <div class="gift-container">
+                <div class="gift-box">
+                    <div class="lid"></div>
+                    <div class="ribbon"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="scrapbook">
+                    <div class="cover">💛 Scrapbook</div>
+                    <div class="page left"></div>
+                    <div class="page right"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A -->
+        <section id="a">
+            <h1>About You 💐</h1>
+            <p>
+                Kamu itu anak bungsu yang hangat, lucu, dan selalu punya
+                semangat luar biasa. Dunia kayaknya selalu lebih tenang kalau
+                kamu ada.
+            </p>
+            <button onclick="nextPage('t')">Lanjut 📖</button>
+        </section>
+
+        <!-- T -->
+        <section id="t">
+            <h1>The Story of Us 📖</h1>
+            <p>
+                Awalnya cuma KKN, tapi entah kenapa, semua hal kecil waktu itu
+                berubah jadi kenangan yang nggak bisa kulupain.
+            </p>
+            <button onclick="nextPage('u')">Lanjut 💞</button>
+        </section>
+
+        <!-- U -->
+        <section id="u">
+            <h1>Unspoken Words 💬</h1>
+            <p>
+                Semangat sidangnya ya 🌻 Aku tahu kamu pasti bisa. Terima kasih
+                udah selalu jadi alasan aku semangat juga.
+            </p>
+            <button onclick="nextPage('l')">Lanjut 🌙</button>
+        </section>
+
+        <!-- L -->
+        <section id="l">
+            <h1>Last but not Least 🌅</h1>
+            <p>
+                Selamat ulang tahun, Hima. Terima kasih udah jadi kamu — baik,
+                ulet, dan selalu bikin semuanya terasa berarti 💖
+            </p>
+            <button onclick="nextPage('h')">Putar lagi 💞</button>
+        </section>
+
+        <!-- Kontrol Musik -->
+        <audio id="bg-music" loop>
+            <source src="assets/prams.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button id="music-btn" onclick="toggleMusic()">🎵</button>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
