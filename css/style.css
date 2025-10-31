@@ -70,7 +70,7 @@
         /* 🧩 FORM ELEMENTS */
         input {
             padding: 12px 20px;
-            border-radius: 12px;
+            border-radius: 100px;
             border: 2px solid var(--border-light);
             text-align: center;
             outline: none;
@@ -139,7 +139,7 @@
             background: rgba(255, 255, 255, 0.9);
             border: 2px solid var(--accent-light);
             border-radius: 50%;
-            padding: 12px 16px;
+            padding: 12px 12px;
             cursor: pointer;
             transition: all 0.3s ease;
             z-index: 1000;
@@ -166,7 +166,6 @@
         .lock {
             position: relative;
             width: 80px;
-            height: 100px;
             margin-bottom: 10px;
         }
 
@@ -671,7 +670,7 @@
         /* Bow */
         .gift-box .bow {
             position: absolute;
-            top: 30px;
+            top: 0px;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 4;
@@ -729,10 +728,10 @@
             opacity: 0;
         }
 
-        .sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-        .sparkle:nth-child(2) { top: 20%; right: 15%; animation-delay: 0.5s; }
-        .sparkle:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 1s; }
-        .sparkle:nth-child(4) { bottom: 20%; right: 10%; animation-delay: 1.5s; }
+        .sparkle:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 15%; right: 10%; animation-delay: 0.5s; }
+        .sparkle:nth-child(3) { bottom: 10%; left: 10%; animation-delay: 1s; }
+        .sparkle:nth-child(4) { bottom: 5%; right: 5%; animation-delay: 1.5s; }
 
         @keyframes sparkle {
             0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }

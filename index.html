@@ -14,24 +14,30 @@
                     <div class="lock-body"></div>
                     <div class="lock-shackle"></div>
                 </div>
-                <h1>Hai, Hima!</h1>
-                <p>
-                    Aku punya sesuatu yang spesial buat kamu hari ini... Tapi
-                    cuma bisa kamu buka kalau tahu kuncinya 😋
-                </p>
-                <input
-                    id="password"
-                    type="password"
-                    placeholder="Masukkan password..."
-                />
-                <button onclick="checkPassword()">Buka</button>
+                <div>
+                    <h1>Halo, Uut!</h1>
+                    <p>
+                        I have something for you, tapi isi passwordnya dulu deh.
+                    </p>
+                </div>
+                <div>
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Tanggal jadian (ddmm)"
+                    />
+                    <button onclick="checkPassword()">Lesgow</button>
+                </div>
             </div>
         </section>
 
         <!-- I - Birthday Cake -->
         <section id="i">
             <h1>It's Your Day 🎂</h1>
-            <p>Selamat ulang tahun yang ke-22, Hima! Tiup lilinnya ya~</p>
+            <div>
+                <p>Eh, ini tanggal 1 November ya?</p>
+            <p>Selamat Ulang Tahun yaa Uut!</p>
+            </div>
             <div class="cake-container">
                 <div class="cake">
                     <div class="frosting"></div>
@@ -86,7 +92,7 @@
                     semangat luar biasa. Dunia kayaknya selalu lebih tenang
                     kalau kamu ada.
                 </p>
-                <button onclick="flipPage('t')">Halaman Berikutnya 📖</button>
+                <button onclick="flipPage('t')">Lanjut ➜</button>
             </div>
         </section>
 
@@ -100,7 +106,7 @@
                     Awalnya cuma KKN, tapi entah kenapa, semua hal kecil waktu
                     itu berubah jadi kenangan yang nggak bisa kulupain.
                 </p>
-                <button onclick="flipPage('u')">Halaman Berikutnya 💞</button>
+                <button onclick="flipPage('u')">Lanjut ➜</button>
             </div>
         </section>
 
@@ -114,7 +120,7 @@
                     Semangat sidangnya ya 🌻 Aku tahu kamu pasti bisa. Terima
                     kasih udah selalu jadi alasan aku semangat juga.
                 </p>
-                <button onclick="flipPage('l')">Halaman Berikutnya 🌙</button>
+                <button onclick="flipPage('l')">Lanjut ➜</button>
             </div>
         </section>
 
@@ -149,6 +155,9 @@
         </section>
 
         <!-- Music Control -->
+        <audio id="bg-music" loop>
+            <source src="assets/pram.mp3" type="audio/mpeg" />
+        </audio>
         <button id="music-btn" onclick="toggleMusic()">🎵</button>
 
         <script src="js/main.js"></script>

@@ -37,7 +37,7 @@ function nextPage(id) {
 function flipPage(id) {
     const currentSection = document.querySelector("section.active");
     const currentPage = currentSection.querySelector(".scrapbook-page");
-    
+
     if (currentPage) {
         currentPage.classList.add("flipping-out");
         setTimeout(() => {
@@ -51,16 +51,28 @@ function flipPage(id) {
 }
 
 // Music Control
+const bgMusic = document.getElementById("bg-music");
+
 function playMusic() {
-    // Placeholder - tambahkan audio element jika ada file musik
-    isPlaying = true;
-    musicBtn.textContent = "🔊";
+    bgMusic
+        .play()
+        .then(() => {
+            isPlaying = true;
+            musicBtn.textContent = "🔊";
+        })
+        .catch((err) => {
+            console.log("Autoplay diblokir:", err);
+            isPlaying = false;
+            musicBtn.textContent = "�";
+        });
 }
 
 function toggleMusic() {
     if (isPlaying) {
+        bgMusic.pause();
         musicBtn.textContent = "🔇";
     } else {
+        bgMusic.play();
         musicBtn.textContent = "🔊";
     }
     isPlaying = !isPlaying;
