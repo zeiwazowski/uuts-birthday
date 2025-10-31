@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <!-- H - Lock Screen -->
+        <!-- H -->
         <section id="h" class="active">
             <div class="lock-container">
                 <div class="lock">
@@ -17,26 +17,47 @@
                 <div>
                     <h1>Halo, Uut!</h1>
                     <p>
-                        I have something for you, tapi isi passwordnya dulu deh.
+                        I have something for you, tapi isi passwordnya dulu yaa
+                        xixi.
                     </p>
                 </div>
                 <div>
+                    <p
+                        class="hint"
+                        style="
+                            margin-bottom: 10px;
+                            margin-top: 0;
+                            font-style: italic;
+                            opacity: 0.7;
+                        "
+                    >
+                        Kita jadian tanggal berapa si?
+                    </p>
                     <input
                         id="password"
-                        type="password"
-                        placeholder="Tanggal jadian (ddmm)"
+                        type="text"
+                        placeholder="format: ddmm"
                     />
                     <button onclick="checkPassword()">Lesgow</button>
                 </div>
             </div>
         </section>
 
-        <!-- I - Birthday Cake -->
+        <!-- I -->
         <section id="i">
             <h1>It's Your Day 🎂</h1>
             <div>
-                <p>Eh, ini tanggal 1 November ya?</p>
-            <p>Selamat Ulang Tahun yaa Uut!</p>
+                <p>Eh, ini tanggal 1 November ya? Tanggal spesial kamu dong!</p>
+                <p
+                    style="
+                        font-family: serif;
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 24px;
+                    "
+                >
+                    Selamat ulang tahun yaa utttttt!!!❤️
+                </p>
             </div>
             <div class="cake-container">
                 <div class="cake">
@@ -47,15 +68,17 @@
                     </div>
                 </div>
             </div>
-            <p class="hint">Klik lilinnya untuk meniup~ 🕯️</p>
+            <p class="hint">Klik lilinnya biar kayak niup~ 🕯️</p>
         </section>
 
-        <!-- M - Gift Box -->
+        <!-- M -->
         <section id="m">
             <h1>My Little Gift for You 🎁</h1>
             <p>
-                Kado ini nggak bisa dibungkus kertas, tapi isinya mungkin bisa
-                bikin kamu senyum sedikit lebih lama 💞
+                Aku ada sesuatu nii buat kamu. Ini aku bikin khusus buat kamu
+                wei. Alay yoben😛
+                <br />
+                Cara bukanya diklik azza.
             </p>
             <div class="gift-container">
                 <div class="sparkles">
@@ -76,55 +99,70 @@
                     <div class="box"></div>
                 </div>
                 <div class="scrapbook">
-                    <div class="cover">For You</div>
+                    <div class="cover">Buat Uut😛</div>
                 </div>
             </div>
         </section>
 
-        <!-- A - About -->
+        <!-- A -->
         <section id="a">
             <div class="scrapbook-page">
                 <div class="page-corner corner-tl"></div>
                 <div class="page-corner corner-br"></div>
                 <h1>About You 💐</h1>
-                <p>
-                    Kamu itu anak bungsu yang hangat, lucu, dan selalu punya
-                    semangat luar biasa. Dunia kayaknya selalu lebih tenang
-                    kalau kamu ada.
+                <p class="scrapbook-p">
+                    Hai, Himatul Fitria Utami alias Uut alias cewekuu. Kamu tu
+                    anak bungsu dari 3 bersaudara. Meski begitu, kamu keliatan
+                    dewasa banget, selalu care sama orang-orang di sekitarmu.
+                    Aku kagum banget sama caramu ngatur semuanya, mulai dari
+                    kuliah, organisasi, sampai urusan pribadi. Kamu tuh keliatan
+                    independen dan mandiri, selalu bisa nyelesain banyak hal
+                    sendiri. Katanya sih gitu, tapi kalau sama aku nggak usah
+                    sok-sokan mandiri juga wleee😝. Aku mau bilang kalo kamu
+                    nggak perlu jadi orang lain, karena aku sukanya sama diri
+                    kamu yang ini.
                 </p>
                 <button onclick="flipPage('t')">Lanjut ➜</button>
             </div>
         </section>
 
-        <!-- T - Story -->
+        <!-- T -->
         <section id="t">
             <div class="scrapbook-page">
                 <div class="page-corner corner-tl"></div>
                 <div class="page-corner corner-br"></div>
-                <h1>The Story of Us 📖</h1>
-                <p>
-                    Awalnya cuma KKN, tapi entah kenapa, semua hal kecil waktu
-                    itu berubah jadi kenangan yang nggak bisa kulupain.
+                <h1>The Whises ✨</h1>
+                <p class="scrapbook-p">
+                    Aku pasti doain yang terbaik buat kamu ut, sehat selalu,
+                    bahagia selalu, lancar rezekinya. Semoga segala hal baik
+                    datang silih berganti yaa. Semoga kamu selalu diberikan
+                    kemudahan dan kelancaran di setiap langkah, entah itu urusan
+                    kuliah, organisasi, atau hal-hal lainnya.
                 </p>
                 <button onclick="flipPage('u')">Lanjut ➜</button>
             </div>
         </section>
 
-        <!-- U - Unspoken -->
+        <!-- U -->
         <section id="u">
             <div class="scrapbook-page">
                 <div class="page-corner corner-tl"></div>
                 <div class="page-corner corner-br"></div>
                 <h1>Unspoken Words 💬</h1>
-                <p>
-                    Semangat sidangnya ya 🌻 Aku tahu kamu pasti bisa. Terima
-                    kasih udah selalu jadi alasan aku semangat juga.
+                <p class="scrapbook-p">
+                    Aku tuh beneran bersyukur bisa ketemu kamu, ut. Makasih udah
+                    hadir dan tetap di sini. Semoga kita bisa terus saling
+                    support dan tumbuh bersama yaa.
+                    <br /><br />
+                    Dikurangi yaa gengsinya, jangan sering maksain diri sendiri,
+                    jaga kesehatan, istirahat dan makan yang cukup. Jangan lupa
+                    cerita ke aku kalau ada apa-apa. I'm here for you. 🫶🏻
                 </p>
                 <button onclick="flipPage('l')">Lanjut ➜</button>
             </div>
         </section>
 
-        <!-- L - Last -->
+        <!-- L -->
         <section id="l">
             <h1>Last but not Least 🌅</h1>
             <div class="sunflower-container">
@@ -147,11 +185,7 @@
                     </div>
                 </div>
             </div>
-            <p>
-                Selamat ulang tahun, Hima. Terima kasih udah jadi kamu — baik,
-                ulet, dan selalu bikin semuanya terasa berarti 💖
-            </p>
-            <button onclick="nextPage('h')">Putar lagi 💞</button>
+            <p>Sekali lagi, selamat ulang tahun ya, sayang! lopyuuu 💖</p>
         </section>
 
         <!-- Music Control -->

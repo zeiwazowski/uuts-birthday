@@ -15,7 +15,7 @@ function checkPassword() {
             playMusic();
         }, 1000);
     } else {
-        alert("Duh, salah nih! Coba lagi yaa 💛");
+        alert("Duh, salah nih! Coba lagi yaa");
         document.getElementById("password").value = "";
     }
 }
@@ -86,10 +86,9 @@ const hint = document.querySelector("#i .hint");
 if (flame && candle) {
     const blowCandle = () => {
         flame.classList.add("off");
-        hint.textContent = "Hooo~ Lilinnya padam 💛";
 
         setTimeout(() => {
-            hint.textContent = "Semoga semua harapanmu menyala lebih terang 🌻";
+            hint.textContent = "Yeayyy!";
             setTimeout(() => {
                 nextPage("m");
             }, 2500);
